@@ -37,7 +37,7 @@
                     </a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="contactme.html" class="button">
+                    <a href="/" class="button">
                         Contact Me 
                     </a>
                 </li>
@@ -45,41 +45,33 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <h1>REGAN</h1>
-                <h2>LAI</h2>
-                <p>Enthusiast in gym, sports, and computer science.</p>
-                <button class="main__btn"><a href="/">Get Started</a></button>
-            </div>
-            <div class="main__img--container">
-                <img src="images/thumbs.jpeg" alt="pic" id="main__img">
-            </div>
-        </div>
-    </div>
 
-    <!-- Hobbies Section -->
-     <div class="hobbies">
-        <h1>My favorite things to do</h1>
-        <div class="hobbies__container">
-            <div class="hobbies__card">
-                <h2>Working Out</h2>
-                <p>A Mental Callus</p>
-                <button>
-                    <a href="workingout.html">See More</a>
-                </button>
+    <!-- Message Form -->
+    <div class="form__container">
+        <h2>Send Me a Message</h2>
+        <form action="#" method="post" class="message__form">
+            <div class="form__group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
             </div>
-            <div class="hobbies__card">
-                <h2>Playing Sports</h2>
-                <p>An Endless Journey</p>
-                <button>
-                    <a href="playingsports.html">See More</a>
-                </button>
+            <div class="form__group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
             </div>
-        </div>
-     </div>
+            <div class="form__group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form__group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message(Form does not work at the moment)" required></textarea>
+            </div>
+            <button type="submit" class="form__btn">Submit</button>
+        </form>
+    </div>
+    
+
+
 
      <!-- Footer Section -->
       <div class="footer__container">
