@@ -290,8 +290,13 @@
 }
 
 #main__img {
-    height: 80%;
-    width: 80%;
+    height: 70%;
+    width: 70%;
+
+    /* Centers image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* mobile responsive */
@@ -332,7 +337,7 @@
         margin-top: 3rem;
     }
 
-    .main__contet h2 {
+    .main__content h2 {
         font-size: 2rem;
     }
 
@@ -347,8 +352,8 @@
     }
 }
 
-/* Services Section CSS */
-.services {
+/* Hobbies Section CSS */
+.hobbies {
     background: #141414;
     display: flex;
     flex-direction: column;
@@ -356,7 +361,7 @@
     height: 100vh;
 }
 
-.services h1 {
+.hobbies h1 {
     background-color: #ff8177;
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c, 78%, #b12a5b, 100%);
     background-size: 100%;
@@ -368,13 +373,13 @@
     -moz-text-fill-color: transparent;
 }
 
-.services__container {
+.hobbies__container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.services__card {
+.hobbies__card {
     margin: 1rem;
     height: 525px;
     width: 400px;
@@ -383,33 +388,33 @@
         to bottom,
         rgba(0,0,0,0) 0%,
         rgba(17,17,17,0.6) 100%), 
-    url('/images/pic3.jpg');
+    url('/images/lift.jpeg');
     background-size: cover;
     position: relative;
     color: #fff;
 }
 
-.services__card:nth-child(2) {
+.hobbies__card:nth-child(2) {
     background-image: linear-gradient(
         to bottom,
         rgba(0,0,0,0) 0%,
         rgba(17,17,17,0.6) 100%), 
-    url('/images/pic4.jpg');
+    url('/images/dunk.jpeg');
 }
 
-.services h2 {
+.hobbies h2 {
     position: absolute;
     top: 350px;
     left: 30px;
 }
 
-.services__card p {
+.hobbies p {
     position: absolute;
     top: 400px;
     left: 30px;
 }
 
-.services__card button {
+.hobbies__card button {
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -423,33 +428,34 @@
     cursor: pointer;
 }
 
-.services__card:hover {
+.hobbies__card:hover {
     transform: scale(1.075);
     transition: 0.2s ease-in;
     cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {
-    .services {
+    .hobbies {
         height: 1600px;
     }
 
-    .services h1 {
+    .hobbies h1 {
         font-size: 2rem;
-        margin-top: 12rem;
+        margin-top: 19rem;
+        margin-bottom: 2rem;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .services {
+    .hobbies {
         height: 1400px;
     }
 
-    .services h1 {
+    .hobbies h1 {
         font-size: 1.2rem;
     }
 
-    .services__card {
+    .hobbies__card {
         width: 300px;
     }
 }
@@ -549,9 +555,14 @@
     white-space: nowrap;
 }
 
+.navbar__btn {
+    white-space: nowrap;
+}
+
 .navbar__links {
     padding: 0 1.5rem; 
 }
+
 .navbar__menu {
     justify-content: space-evenly; 
 }
